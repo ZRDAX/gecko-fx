@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gecko FX</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+  <h1>🦎 Gecko-FX</h1>
+  <p>Real-time currency converter</p>
+
+  <input id="amount" type="number" placeholder="0.00" min="0" />
+
+  <select id="from"></select>
+  <select id="to"></select>
+
+  <button onclick="convert()">Convert</button>
+
+  <div class="result" id="result">0.00</div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
